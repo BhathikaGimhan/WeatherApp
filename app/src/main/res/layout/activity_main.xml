@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgound"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: "
+        android:textSize="18sp"
+        android:layout_below="@id/tv_latitude"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        android:textSize="18sp"
+        android:layout_below="@id/tv_longitude"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Time: "
+        android:textSize="18sp"
+        android:layout_below="@id/tv_address"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Info: "
+        android:textSize="18sp"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_below="@id/tv_weather_info"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+</RelativeLayout>
